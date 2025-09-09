@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Streamlit cache
+.streamlit/
+*/.streamlit/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Notebooks / temp
+.ipynb_checkpoints/
+*.tmp
+*.log
