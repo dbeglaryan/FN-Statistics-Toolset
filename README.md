@@ -1,31 +1,37 @@
-# FrostNode | Statistics Toolset
+# 🧊 FrostNode | Statistics Toolset ⚡
 
-Professional toolset that stays simple. Two modes (Simple / Advanced), charts you can download as PNG,
-Excel-friendly outputs, and one-click exports.
+![Intro](intro.png)
 
-## Highlights (new in v2)
-- Download-All ZIP (charts + tables + summary.txt)
-- Definitions & Tips panel
-- Auto-narratives (histogram shape, regression conclusion, CI meaning)
-- Import helpers (header, delimiter, coerce-to-numeric, drop log)
-- Assumption checks: Q-Q plot, Shapiro–Wilk; Breusch–Pagan hint
-- Transform toggles: log(y), log(x), both; back-prediction
-- Spearman correlation option + 95% CI for r (Fisher z)
-- Excel extras: absolute ranges toggle; Formula Sheet download (.txt)
-- Export to **Excel**, **Word**, **PowerPoint** with one click
-- Save/Load session (.json)
+A professional **statistics toolset** that stays **simple** but packs **advanced power**.  
+Built with 🐍 **Python + Streamlit**, hosted free on **[Streamlit Cloud](https://frostnode-statisticstoolset.streamlit.app/)**.  
 
-## Run locally
+Two modes, intuitive UI, one-click exports. 🔥  
+
+---
+
+## ✨ Features
+- 📦 **Download-All ZIP** → charts + tables + summary
+- 📚 **Definitions & Tips panel** → quick reference
+- 🧾 **Auto-narratives** → histogram shape, regression conclusions, CI interpretations
+- 🔧 **Import helpers** → delimiter, header toggle, coerce-to-numeric, drop log
+- 🔍 **Assumption checks** → Q-Q plot, Shapiro–Wilk, Breusch–Pagan hint
+- 🔄 **Transform toggles** → log(y), log(x), both; auto back-prediction
+- 📈 **Correlation** → Pearson + Spearman (with CI for r via Fisher z)
+- 🧮 **Excel extras** → formula sheet (.txt) with absolute range option
+- 💾 **Exports** → Excel, Word, PowerPoint, or one-click ZIP
+- 💡 **Save/Load session** → JSON snapshot of your work
+
+---
+
+## 🚀 Run locally
 ```bash
+# create & activate venv
 python -m venv .venv
 # Windows: .venv\Scripts\activate
 # macOS/Linux: source .venv/bin/activate
-pip install -r requirements.txt
-streamlit run app_streamlit.py
-```
 
-## Student workflow (super simple)
-1. Upload CSV/Excel or choose a sample.  
-2. Pick X (and Y for regression).  
-3. In **Simple** mode: click Histogram or Scatter+Line → **Download PNG**.  
-4. Need everything? Go to **Exports** → Download-All ZIP / Excel / Word / PowerPoint.
+# install deps
+pip install -r requirements.txt
+
+# launch the app
+streamlit run app_streamlit.py
